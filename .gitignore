@@ -5,3 +5,6 @@
 
 !.gitignore
 !*.hs
+
+# even if they are located in subdirs
+!*/
