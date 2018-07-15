@@ -1,0 +1,5 @@
+-- https://www.hackerrank.com/challenges/fp-list-length/problem
+
+len :: [a] -> Int
+len [] = 0
+len (x:xs) = 1 + len xs
