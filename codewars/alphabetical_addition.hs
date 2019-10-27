@@ -27,5 +27,3 @@ sumLetters :: [Char] -> M.Map Char Int -> Maybe Int
 sumLetters list map = 
   let l = fmap (\x -> M.lookup x map) list
   in foldr (\x y -> (+) <$> x <*> y) (Just 0) l
-
-      
