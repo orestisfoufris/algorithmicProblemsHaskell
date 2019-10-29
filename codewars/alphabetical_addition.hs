@@ -6,16 +6,10 @@ import qualified Data.Map as M
 import Data.Maybe
 
 mapf :: M.Map Char Int
-mapf = 
-  let l = [x | x <- ['a'..'z']]
-      n = [x | x <- [1..26]]
-  in M.fromList $ zip l n
+mapf = M.fromList $ zip ['a'..'z'] [1..26]
   
 mapr :: M.Map Int Char
-mapr = 
-  let l = [x | x <- ['a'..'z']]
-      n = [x | x <- [1..26]]
-  in M.fromList $ zip n l
+mapr = M.fromList $ zip [1..26] ['a'..'z']
 
 addLetters :: [Char] -> Char
 addLetters [] = 'z'
